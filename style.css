@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6e6e6;
+    background-color: #191a25;
     color: #333;
   }
   
@@ -58,23 +58,15 @@ body {
   }
   
   .footer {
-    background-color: #202b33;
+    
+    background-color:	#0a0a0a;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
   }
-  p {
 
-  margin: 0;
-  padding: 0; 
-  color:#000000
-  }
   
-  h1 {
-   margin: 0;  
-   padding: 0;
-   color:#000000;
-   blackground: #333;
-
-  }
+ 
+  
+  
