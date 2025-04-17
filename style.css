@@ -1,10 +1,16 @@
-
-body {
+body { 
+    /* min-height: 100vh; 
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  */ 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #191a25;
-    color: #333;
+    background: #0e1012;
+    color: #000000;
+    
   }
   
   .header {
@@ -19,27 +25,33 @@ body {
   .profile {
     display: inline-block;
     text-align: center;
+  
   }
   
   .profile-img {
+    display: flex;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 4px solid #fff;
-  }
+    border: 4px solid #040c0c;
+    box-shadow: 0 0 15px 5px rgba(116, 231, 248, 0.8); /* Efeito neon com a cor #74e7f8 */
+}
+
+  
   
   .content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: #121b1e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: #fff;
   }
   
   h2 {
-    color: #000000;
+    color:#2e9aa3 ;
   }
   
   ul {
@@ -59,12 +71,52 @@ body {
   
   .footer {
     
-    background-color:	#0a0a0a;
-    color: #ffffff;
+    background-color:#000000 ;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
   }
+  
+  /* Estilizando o elemento h1 */
+h1 {
+  font-family: monospace;
+  text-shadow:
+    0 0 10px rgba(63, 161, 183, 0.8), 
+    0 0 20px rgba(63, 161, 183, 0.8);
+  color: #fff;
+
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 4px solid white;
+
+  animation: animaTexto steps(25) 2s forwards, animaMarcador 2s steps(25) 1 forwards;
+}
+
+span.neon-middle {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), /* Sombra preta para destacar */
+    0 0 20px rgba(0, 0, 0, 0.7); /* Pode ajustar o tamanho da sombra conforme necessário */
+  color: #fff; /* Mantém o texto branco */
+}
+
+@keyframes animaTexto {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes animaMarcador {
+  0% {
+    border-right-color: white;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
 
   
  
